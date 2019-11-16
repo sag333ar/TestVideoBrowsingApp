@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eRJ-Zw-S4G">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RumblAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Hm4-wx-OMn">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="200" id="uda-wc-WgO" customClass="TableViewCell" customModule="RumblAssignment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uda-wc-WgO" id="H2b-wx-8Ls">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xyO-Xl-f7t">
+                                                    <rect key="frame" x="15" y="53" width="345" height="136"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GVC-tc-PIP">
+                                                        <size key="itemSize" width="100" height="135"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Cell" id="yCf-dk-zeS" customClass="CollectionViewCell" customModule="RumblAssignment" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.5" width="100" height="135"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bW8-gM-8IP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="135"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="rumblLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-YK-RoA">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="135"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="135" id="a0n-mZ-TFR"/>
+                                                                            <constraint firstAttribute="width" constant="100" id="gQX-NF-U3W"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="cGN-YK-RoA" firstAttribute="leading" secondItem="bW8-gM-8IP" secondAttribute="leading" id="OlZ-To-jqP"/>
+                                                                    <constraint firstItem="cGN-YK-RoA" firstAttribute="top" secondItem="bW8-gM-8IP" secondAttribute="top" id="XSw-8E-WCN"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="100" height="135"/>
+                                                            <connections>
+                                                                <outlet property="cellImageView" destination="cGN-YK-RoA" id="yvW-kT-x7p"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snH-D5-uCh">
+                                                    <rect key="frame" x="15" y="11" width="345" height="34"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xyO-Xl-f7t" firstAttribute="leading" secondItem="H2b-wx-8Ls" secondAttribute="leadingMargin" id="8GA-fw-xnK"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="xyO-Xl-f7t" secondAttribute="trailing" id="8dM-7T-Iiy"/>
+                                                <constraint firstItem="xyO-Xl-f7t" firstAttribute="top" secondItem="snH-D5-uCh" secondAttribute="bottom" constant="8" symbolic="YES" id="BbS-9N-vkT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="snH-D5-uCh" secondAttribute="trailing" id="jnM-zN-xLc"/>
+                                                <constraint firstItem="snH-D5-uCh" firstAttribute="top" secondItem="H2b-wx-8Ls" secondAttribute="topMargin" id="kbF-ST-8W5"/>
+                                                <constraint firstItem="snH-D5-uCh" firstAttribute="leading" secondItem="H2b-wx-8Ls" secondAttribute="leadingMargin" id="lSY-lX-uOM"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="xyO-Xl-f7t" secondAttribute="bottom" id="tjD-G8-yvg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="xyO-Xl-f7t" id="Y1g-gW-k3N"/>
+                                            <outlet property="titleLabel" destination="snH-D5-uCh" id="FMI-Mc-afl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kYO-po-16H" id="Dm1-WH-RRZ"/>
+                                    <outlet property="delegate" destination="kYO-po-16H" id="Qc4-4q-XPN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Hm4-wx-OMn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ece-fb-qPF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hm4-wx-OMn" secondAttribute="trailing" id="FHp-hg-fpP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hm4-wx-OMn" secondAttribute="bottom" id="JEC-2k-RxH"/>
+                            <constraint firstItem="Hm4-wx-OMn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hlg-Ly-Yw0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sby-oO-x8o"/>
+                    <connections>
+                        <outlet property="tableDataSourceDelegate" destination="kYO-po-16H" id="EmS-mh-ckv"/>
+                        <outlet property="tableView" destination="Hm4-wx-OMn" id="jQO-O2-MaY"/>
+                        <segue destination="yyt-o3-qIX" kind="presentation" identifier="showPlayer" modalPresentationStyle="fullScreen" id="AxB-6Y-JIM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="kYO-po-16H" customClass="TableViewDelegateDataSource" customModule="RumblAssignment" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="618" y="51"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="bEz-NQ-5HV">
+            <objects>
+                <viewController storyboardIdentifier="PlayerViewController" id="yyt-o3-qIX" customClass="PlayerViewController" customModule="RumblAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f6J-4B-8dS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="rumblLogo" translatesAutoresizingMaskIntoConstraints="NO" id="DDj-gq-idH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10c-UY-WaY">
+                                <rect key="frame" x="26" y="30" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="din-d7-dZf"/>
+                                    <constraint firstAttribute="width" constant="30" id="fJE-hg-MYO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="◁">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="hero_dismissViewController" destination="yyt-o3-qIX" eventType="touchUpInside" id="Bbz-rJ-rg8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DDj-gq-idH" secondAttribute="bottom" id="FjR-1h-hF8"/>
+                            <constraint firstItem="10c-UY-WaY" firstAttribute="leading" secondItem="f6J-4B-8dS" secondAttribute="leadingMargin" constant="10" id="Q1y-ze-Xqt"/>
+                            <constraint firstItem="10c-UY-WaY" firstAttribute="top" secondItem="f6J-4B-8dS" secondAttribute="topMargin" constant="30" id="YiF-YS-3Ty"/>
+                            <constraint firstAttribute="trailing" secondItem="DDj-gq-idH" secondAttribute="trailing" id="aoN-BR-fL3"/>
+                            <constraint firstItem="DDj-gq-idH" firstAttribute="leading" secondItem="f6J-4B-8dS" secondAttribute="leading" id="jsY-A6-nDf"/>
+                            <constraint firstItem="DDj-gq-idH" firstAttribute="top" secondItem="f6J-4B-8dS" secondAttribute="top" id="vyf-Hd-nwr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="K5a-3d-E6m"/>
+                    <connections>
+                        <outlet property="delegateContentImageView" destination="DDj-gq-idH" id="KmT-dT-8M5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Waj-cV-RDd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1585" y="51"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5qa-Lj-ya7">
+            <objects>
+                <navigationController id="eRJ-Zw-S4G" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="lCQ-VL-ScQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SJ7-Bg-54c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ee-yd-YBJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-290" y="51"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rumblLogo" width="512" height="512"/>
+    </resources>
+</document>

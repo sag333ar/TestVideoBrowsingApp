@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B14256723800196009235D7 /* RumblFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B14256623800196009235D7 /* RumblFramework.framework */; };
+		1B14256823800196009235D7 /* RumblFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B14256623800196009235D7 /* RumblFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1B14256B23800336009235D7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B14256A23800336009235D7 /* ViewModel.swift */; };
+		1B24518D238033AB00E05935 /* NodeThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24518C238033AB00E05935 /* NodeThumbnail.swift */; };
+		1B24518F23803EE200E05935 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B24518E23803EE200E05935 /* CollectionViewCell.swift */; };
+		1B245195238046CD00E05935 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B245194238046CD00E05935 /* PlayerViewController.swift */; };
+		1B458434238008C800EBD523 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B458433238008C800EBD523 /* TableViewCell.swift */; };
+		1B458436238008FD00EBD523 /* CollectionViewDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B458435238008FD00EBD523 /* CollectionViewDataSourceDelegate.swift */; };
+		1BBD1A2A237FFDBD00654E1B /* assignment.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BBD1A29237FFDBD00654E1B /* assignment.json */; };
+		1BF22042237FDF760019D82C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF22041237FDF760019D82C /* AppDelegate.swift */; };
+		1BF22044237FDF760019D82C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF22043237FDF760019D82C /* SceneDelegate.swift */; };
+		1BF22046237FDF760019D82C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF22045237FDF760019D82C /* ViewController.swift */; };
+		1BF22049237FDF760019D82C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF22047237FDF760019D82C /* Main.storyboard */; };
+		1BF2204B237FDF7A0019D82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2204A237FDF7A0019D82C /* Assets.xcassets */; };
+		1BF2204E237FDF7A0019D82C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF2204C237FDF7A0019D82C /* LaunchScreen.storyboard */; };
+		1BF22056237FEDAE0019D82C /* TableViewDelegateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF22055237FEDAE0019D82C /* TableViewDelegateDataSource.swift */; };
+		922B2D2B094AD8D626236777 /* Pods_RumblAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985AD4D5CCA58C2F34B4A16C /* Pods_RumblAssignment.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B14256923800196009235D7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1B14256823800196009235D7 /* RumblFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1B14256623800196009235D7 /* RumblFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RumblFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B14256A23800336009235D7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = SOURCE_ROOT; };
+		1B24518C238033AB00E05935 /* NodeThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NodeThumbnail.swift; path = RumblAssignment/Browse/NodeThumbnail.swift; sourceTree = SOURCE_ROOT; };
+		1B24518E23803EE200E05935 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		1B245194238046CD00E05935 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = SOURCE_ROOT; };
+		1B458433238008C800EBD523 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = RumblAssignment/TableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		1B458435238008FD00EBD523 /* CollectionViewDataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSourceDelegate.swift; sourceTree = "<group>"; };
+		1BBD1A29237FFDBD00654E1B /* assignment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = assignment.json; sourceTree = "<group>"; };
+		1BF2203E237FDF760019D82C /* RumblAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RumblAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BF22041237FDF760019D82C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BF22043237FDF760019D82C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1BF22045237FDF760019D82C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BF22048237FDF760019D82C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BF2204A237FDF7A0019D82C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BF2204D237FDF7A0019D82C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BF2204F237FDF7A0019D82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BF22055237FEDAE0019D82C /* TableViewDelegateDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegateDataSource.swift; sourceTree = "<group>"; };
+		3F505B4F825ADAFBB932035B /* Pods-RumblAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RumblAssignment.debug.xcconfig"; path = "Target Support Files/Pods-RumblAssignment/Pods-RumblAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		985AD4D5CCA58C2F34B4A16C /* Pods_RumblAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RumblAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE83AF645DC9B210972A2BF4 /* Pods-RumblAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RumblAssignment.release.xcconfig"; path = "Target Support Files/Pods-RumblAssignment/Pods-RumblAssignment.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BF2203B237FDF760019D82C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B14256723800196009235D7 /* RumblFramework.framework in Frameworks */,
+				922B2D2B094AD8D626236777 /* Pods_RumblAssignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B14256C2380033F009235D7 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				1BF22055237FEDAE0019D82C /* TableViewDelegateDataSource.swift */,
+				1B458433238008C800EBD523 /* TableViewCell.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		1B2451902380467B00E05935 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1B245193238046B700E05935 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				1B245194238046CD00E05935 /* PlayerViewController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		1B4584372380090800EBD523 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				1B458435238008FD00EBD523 /* CollectionViewDataSourceDelegate.swift */,
+				1B24518C238033AB00E05935 /* NodeThumbnail.swift */,
+				1B24518E23803EE200E05935 /* CollectionViewCell.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		1BF22035237FDF760019D82C = {
+			isa = PBXGroup;
+			children = (
+				1BF22040237FDF760019D82C /* RumblAssignment */,
+				1BF2203F237FDF760019D82C /* Products */,
+				DFB9AAB301F097C64E0513D2 /* Pods */,
+				926943BA27F1F9F3C0AA7655 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1BF2203F237FDF760019D82C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BF2203E237FDF760019D82C /* RumblAssignment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BF22040237FDF760019D82C /* RumblAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				1BF22041237FDF760019D82C /* AppDelegate.swift */,
+				1BF22043237FDF760019D82C /* SceneDelegate.swift */,
+				1BF22057237FEDB70019D82C /* Browse */,
+				1B245193238046B700E05935 /* Player */,
+				1BF22047237FDF760019D82C /* Main.storyboard */,
+				1BF2204A237FDF7A0019D82C /* Assets.xcassets */,
+				1BF2204C237FDF7A0019D82C /* LaunchScreen.storyboard */,
+				1BF2204F237FDF7A0019D82C /* Info.plist */,
+				1BBD1A29237FFDBD00654E1B /* assignment.json */,
+				1B2451902380467B00E05935 /* Utilities */,
+			);
+			path = RumblAssignment;
+			sourceTree = "<group>";
+		};
+		1BF22057237FEDB70019D82C /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				1BF22045237FDF760019D82C /* ViewController.swift */,
+				1B14256A23800336009235D7 /* ViewModel.swift */,
+				1B14256C2380033F009235D7 /* Table */,
+				1B4584372380090800EBD523 /* Collection */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		926943BA27F1F9F3C0AA7655 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B14256623800196009235D7 /* RumblFramework.framework */,
+				985AD4D5CCA58C2F34B4A16C /* Pods_RumblAssignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFB9AAB301F097C64E0513D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F505B4F825ADAFBB932035B /* Pods-RumblAssignment.debug.xcconfig */,
+				EE83AF645DC9B210972A2BF4 /* Pods-RumblAssignment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BF2203D237FDF760019D82C /* RumblAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BF22052237FDF7A0019D82C /* Build configuration list for PBXNativeTarget "RumblAssignment" */;
+			buildPhases = (
+				3560746E031C79EDC65BD2E0 /* [CP] Check Pods Manifest.lock */,
+				1BF2203A237FDF760019D82C /* Sources */,
+				1BF2203B237FDF760019D82C /* Frameworks */,
+				1BF2203C237FDF760019D82C /* Resources */,
+				1B14256923800196009235D7 /* Embed Frameworks */,
+				118859BE532854FF47247B06 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RumblAssignment;
+			productName = RumblAssignment;
+			productReference = 1BF2203E237FDF760019D82C /* RumblAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BF22036237FDF760019D82C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "sagar kothari";
+				TargetAttributes = {
+					1BF2203D237FDF760019D82C = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1BF22039237FDF760019D82C /* Build configuration list for PBXProject "RumblAssignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BF22035237FDF760019D82C;
+			productRefGroup = 1BF2203F237FDF760019D82C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BF2203D237FDF760019D82C /* RumblAssignment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BF2203C237FDF760019D82C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BBD1A2A237FFDBD00654E1B /* assignment.json in Resources */,
+				1BF2204E237FDF7A0019D82C /* LaunchScreen.storyboard in Resources */,
+				1BF2204B237FDF7A0019D82C /* Assets.xcassets in Resources */,
+				1BF22049237FDF760019D82C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		118859BE532854FF47247B06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RumblAssignment/Pods-RumblAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RumblAssignment/Pods-RumblAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RumblAssignment/Pods-RumblAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3560746E031C79EDC65BD2E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RumblAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BF2203A237FDF760019D82C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B14256B23800336009235D7 /* ViewModel.swift in Sources */,
+				1BF22046237FDF760019D82C /* ViewController.swift in Sources */,
+				1B24518F23803EE200E05935 /* CollectionViewCell.swift in Sources */,
+				1B458436238008FD00EBD523 /* CollectionViewDataSourceDelegate.swift in Sources */,
+				1BF22042237FDF760019D82C /* AppDelegate.swift in Sources */,
+				1B24518D238033AB00E05935 /* NodeThumbnail.swift in Sources */,
+				1B458434238008C800EBD523 /* TableViewCell.swift in Sources */,
+				1BF22044237FDF760019D82C /* SceneDelegate.swift in Sources */,
+				1B245195238046CD00E05935 /* PlayerViewController.swift in Sources */,
+				1BF22056237FEDAE0019D82C /* TableViewDelegateDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1BF22047237FDF760019D82C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BF22048237FDF760019D82C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BF2204C237FDF7A0019D82C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BF2204D237FDF7A0019D82C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BF22050237FDF7A0019D82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BF22051237FDF7A0019D82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BF22053237FDF7A0019D82C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F505B4F825ADAFBB932035B /* Pods-RumblAssignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PP4N6AXAF5;
+				INFOPLIST_FILE = RumblAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.RumblAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BF22054237FDF7A0019D82C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE83AF645DC9B210972A2BF4 /* Pods-RumblAssignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PP4N6AXAF5;
+				INFOPLIST_FILE = RumblAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.RumblAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BF22039237FDF760019D82C /* Build configuration list for PBXProject "RumblAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF22050237FDF7A0019D82C /* Debug */,
+				1BF22051237FDF7A0019D82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BF22052237FDF7A0019D82C /* Build configuration list for PBXNativeTarget "RumblAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BF22053237FDF7A0019D82C /* Debug */,
+				1BF22054237FDF7A0019D82C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BF22036237FDF760019D82C /* Project object */;
+}
